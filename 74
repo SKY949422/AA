@@ -1,0 +1,22 @@
+GameName = "Anime adventure"
+
+tab1name = "Event Banner"
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local GameName = Library:NewWindow(GameName)
+
+local Tab1 = GameName:NewSection(tab1name)
+
+Tab1:CreateButton("Name", function(value)
+
+ end)
+
+Tab1:CreateToggle("快速抽獎", function(value)
+_G.name = value
+while _G.name == true do
+
+wait(5) 
+end
+end)
+local Tab2 = GameName:NewSection("7414")
