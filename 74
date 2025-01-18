@@ -11,8 +11,14 @@ local Tab1 = GameName:NewSection(tab1name)
 Tab1:CreateToggle("快速抽獎", function(value)
 _G.name = value
 while _G.name == true do
+local args = {
+    [1] = "Christmas2024",
+    [2] = "gems10"
+}
 
-wait(5) 
+game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("buy_from_banner"):InvokeServer(unpack(args))
+
+wait(0.01) 
 end
 end)
-local Tab2 = GameName:NewSection("7414")
+local Tab2 = GameName:NewSection("🐷Nico🐷")
