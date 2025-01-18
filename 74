@@ -1,6 +1,6 @@
 GameName = "Anime adventure"
 
-tab1name = "Event Banner"
+tab1name = "活動卡池"
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
 
