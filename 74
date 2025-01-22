@@ -24,7 +24,7 @@ wait(0.01)
 end
 end)
 
-local Tab2 = GameName:NewSection(tab1name)
+local Tab2 = GameName:NewSection(tab2name)
 
 Tab2:CreateToggle("購買扭蛋", function(value)
 _G.name = value
