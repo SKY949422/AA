@@ -1,8 +1,8 @@
 GameName = "Anime adventure"
 
-tab1name = "聖誕節扭蛋"
+tab1name = "🎄聖誕節扭蛋🎄"
 
-tab2name = "萬聖節扭蛋"
+tab2name = "🎃萬聖節扭蛋🎃"
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
 
@@ -10,7 +10,21 @@ local GameName = Library:NewWindow(GameName)
 
 local Tab1 = GameName:NewSection(tab1name)
 
-Tab1:CreateToggle("快速抽獎", function(value)
+Tab1:CreateToggle("1抽出YOKOSO🤑", function(value)
+_G.name = value
+while _G.name == true do
+local args = {
+    [1] = "Christmas2024",
+    [2] = "gems"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("buy_from_banner"):InvokeServer(unpack(args))
+
+wait(0.0001) 
+end
+end)
+
+Tab1:CreateToggle("10抽10隻藍藍路🗣️", function(value)
 _G.name = value
 while _G.name == true do
 local args = {
@@ -26,7 +40,23 @@ end)
 
 local Tab2 = GameName:NewSection(tab2name)
 
-Tab2:CreateToggle("購買扭蛋", function(value)
+Tab2:CreateToggle("買1個蛋蛋", function(value)
+_G.name = value
+while _G.name == true do
+local args = {
+    [1] = "capsule_halloween2",
+    [2] = "event",
+    [3] = "event_shop2",
+    [4] = "1"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("buy_item_generic"):InvokeServer(unpack(args))
+
+wait(0.01) 
+end
+end)
+
+Tab2:CreateToggle("買10個蛋蛋", function(value)
 _G.name = value
 while _G.name == true do
 local args = {
@@ -42,7 +72,23 @@ wait(0.01)
 end
 end)
 
-Tab2:CreateToggle("快速抽獎", function(value)
+Tab2:CreateToggle("1抽出阿卡多😱", function(value)
+_G.name = value
+while _G.name == true do
+local args = {
+    [1] = "capsule_halloween2",
+    [2] = {
+        ["use10"] = false
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_item"):InvokeServer(unpack(args))
+
+wait(0.0001) 
+end
+end)
+
+Tab2:CreateToggle("10抽10隻阿卡多🤯", function(value)
 _G.name = value
 while _G.name == true do
 local args = {
